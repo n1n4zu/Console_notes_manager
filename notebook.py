@@ -32,7 +32,7 @@ class Notebook:
 
         lines = []
         print()
-        line = input('Enter your note (to finish press Ctrl+D (Linux/Mac) lub Ctrl+Z + Enter '
+        line = input('Enter your note (to finish press Ctrl+D (Linux/Mac) or Ctrl+Z + Enter '
                      '(Windows)):\n> ')
         lines.append(line)
         try:
@@ -40,7 +40,7 @@ class Notebook:
                 line = input()
                 lines.append(line)
         except EOFError:
-            # Ctrl+D (Linux/Mac) lub Ctrl+Z + Enter (Windows)
+            # Ctrl+D (Linux/Mac) or Ctrl+Z + Enter (Windows)
             pass
         note = '\n'.join(lines)
 
@@ -128,7 +128,7 @@ class Notebook:
                                 data['last_mod'] = self.__current_time
                                 lines = []
                                 print()
-                                line = input('Enter your note (to finish press Ctrl+D (Linux/Mac) lub Ctrl+Z + Enter '
+                                line = input('Enter your note (to finish press Ctrl+D (Linux/Mac) or Ctrl+Z + Enter '
                                              '(Windows)):\n> ')
                                 lines.append(line)
                                 try:
@@ -136,7 +136,7 @@ class Notebook:
                                         line = input()
                                         lines.append(line)
                                 except EOFError:
-                                    # Ctrl+D (Linux/Mac) lub Ctrl+Z + Enter (Windows)
+                                    # Ctrl+D (Linux/Mac) or Ctrl+Z + Enter (Windows)
                                     pass
                                 data['note'] = '\n'.join(lines)
 
